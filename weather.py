@@ -1,3 +1,5 @@
+# Link for PIL documentation: https://pillow.readthedocs.io/en/stable/
+# Download PIL with 'pip3 install pillow'
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 def main():
@@ -42,8 +44,9 @@ def buildBackground(weatherData):
     TEMPX = 390
     TEMPY = 1000
 
-    # NOTE: If error on ImageFont.truetype call, download below for font
-    # download font: https://github.com/JotJunior/PHP-Boleto-ZF2/blob/master/public/assets/fonts/arial.ttf
+    # set font and size
+    # NOTE: If error on ImageFont.truetype call, download below for font:
+    # font download link: https://github.com/JotJunior/PHP-Boleto-ZF2/blob/master/public/assets/fonts/arial.ttf
     tempFont = ImageFont.truetype("arial.ttf", 170)
     temps = []
     # create 7 text boxes with high and low temperatures
@@ -53,7 +56,7 @@ def buildBackground(weatherData):
         temps[i].multiline_text(((i+1)*TEMPX-i*20, TEMPY),temperatures, font=tempFont)
 
     # save final photo
-    final.save('final.png')
+    final.save('exampleresult.png')
     final.show()
 
 main()
