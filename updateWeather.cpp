@@ -9,14 +9,14 @@ bool writeForecast(const string& file, const string& fullForecast);
 
 int main() {
     // create vector of days in the week and initilize csv file name
-    vector<string> days = {"Monday","Tuesday","Wednessday","Thursday","Friday","Saturday","Sunday"};
+    vector<string> days = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
     string file = "weather.csv";
 
     // INSTRUCTIONS
-    cout << "Weather Forcast Backdrop Generator" << endl;
-    cout << "For each day of the week you will be prompted for 'Forcast', 'High', and 'Low'" << endl;
-    cout << "For Forcast, type 'sun','cloud','partcloud','rain','lightning', or 'snow'" << endl;
-    cout << "For High and Low, type an integer between -50 and 150 (this is in Farenheight)" << endl;
+    cout << "Weather Forecast Backdrop Generator" << endl;
+    cout << "For each day of the week you will be prompted for 'Forecast', 'High', and 'Low'" << endl;
+    cout << "For Forecast, type 'sun','cloud','partcloud','rain','lightning', or 'snow'" << endl;
+    cout << "For High and Low, type an integer between -50 and 150 (this is in Fahrenheit)" << endl;
     cout << "------------------------------------------------------------------------------" << endl;
 
     // Call function and check for return error
