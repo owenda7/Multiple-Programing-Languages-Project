@@ -10,8 +10,8 @@ to generate the backdrop for the newscast using the PIL image library.
 
 <h3> Instructions for use: </h3>
 
-For each day of the week you will be prompted for 'Forecast', 'High', and 'Low'
-
-For Forecast, type 'sun', 'cloud', 'partcloud', 'rain', 'lightning', or 'snow'
-
-For High and Low, type an integer between -50 and 150 (this is in Farenheight)
+* Compile and run updateWeather.cpp
+* For each day of the week you will be prompted for 'Forecast', 'High', and 'Low'
+* For Forecast, type 'sun', 'cloud', 'partcloud', 'rain', 'lightning', or 'snow'
+* For High and Low, type an integer between -50 and 150 (this is in Farenheight)
+* Image will appear in preview and a copy will be saved in the given directory as final.png
